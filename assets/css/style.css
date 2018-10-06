@@ -18,7 +18,8 @@ body {
 footer {
     background-color: #666666;
     margin-bottom: 0;
-    position: relative;
+    overflow: hidden;
+    position: fixed;
     width: 100vw;
     bottom: 0;
 }
@@ -34,6 +35,7 @@ input, textarea {
 
 textarea {
     height: 200px;
+    resize: vertical;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #777777;
 }
@@ -120,9 +122,6 @@ p {
     color: #777777;
 }
 
-#makeItTealDamnit {
-    color: #4aaaa5;
-}
 
 .headerWrapper {
     width: 960px;
@@ -187,13 +186,17 @@ p {
     width: 300px;
 }
 
+.portImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #bioImage {
     float: left;
     padding-right: 5px;
 }
 
-#portImage {
-    position: absolute;
-    top: 0;
-    left: 0;
+#makeItTealDamnit {
+    color: #4aaaa5;
 }
